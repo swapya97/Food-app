@@ -9,7 +9,7 @@ export default function RecipeTile({ recipe }) {
         className="recipeTile"
         onClick={() => window.open(recipe["recipe"]["url"])}
       >
-        <img className="recipeTile__img" src={recipe["recipe"]["image"]} />
+        <img className="recipeTile__img" src={recipe["recipe"]["image"]} alt="img"/>
         <p className="recipeTile__name" key={uuidv4()}>
           {recipe["recipe"]["label"]}
         </p>
